@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>管理员登录</title>
+    <meta charset="UTF-8">
+	<script type="text/javascript" src='./jquery-3.3.1.min.js'></script>
+	<script type="text/javascript" src="ajax.js"></script>
+	<style type="text/css">
+	.div1{
+		background: url(./images/login.jpg)  center center no-repeat;
+     	margin: 0  auto;
+     	width: 900px;
+     	height: 700px;  	
+	}
+     .div1 h1{
+     	margin: 20px auto;
+     	padding: 40px;
+     	text-align: center;
+
+     } 
+     .div1 form{
+     	margin-left: 280px ;
+     	padding-top: 155px;
+     	padding-left:50px; 
+     }
+      form p{
+     	padding: 5px 10px 0;
+     }
+      form #sradd0{
+     	width: 73px; 
+     	text-indent: 4px;
+     	 font-size: 14px;
+     }
+     .add { width: 73px; height:20px; cursor: pointer; margin: -38px 0px 0px 160px;
+     background: #012246;  line-height: 20px; color: #fff; border-radius: 3px;
+ letter-spacing: 3px; font-size:18px;text-align: center;}
+
+ .error{
+ 	display: none;
+ 	color: pink;
+ }
+
+
+	</style>
+
+</head>
+<script type="text/javascript">
+	$(function(){
+    create_code();//生成验证码
+    $('input[name=username]').blur(function (){
+    	val=this.value;
+    	if(val.length<6){
+    		$(this).data({'s':0});
+    		$(this).next().show();
+    	}
+    	else{
+    		$(this).data({'s':1});
+    		$(this).next().hide();
+    	}
+    });//判断用户
+    $('input[name=password]').blur(function (){
+    	 val=this.value;
+    	if(val.length<8){
+    		$(this).data({'s':0});
+    		$(this).next().show();
+    	}
+    	else{
+    		$(this).data({'s':1});
+    		$(this).next().hide();
+    	}
+       
+    });//判断密码
+     $('input[name=sradd]').blur(function (){
+    	val=this.value.toLowerCase();
+        
+    	if(val!==val1){
+    		$('input[name=sradd]').data({'s':0});
+    		$('#error1').show();
+    	}
+    	else{
+    		$('input[name=sradd]').data({'s':1});
+    		$('#error1').hide();
+    	}
+    });//判断验证码
+     $('form').submit(function(){
+     	$('.auto').blur();
+     	tot=0;
+     	$('.auto').each(function(){
+     		tot+=$(this).data('s');	
+     	});
+       
+     	if(tot!=3){
+     		return false;	
+     	}       
+     });//提交
+     $('input[name=butt2]').click(function(){
+     	$('input[name=username]').val('');
+     	$('input[name=password]').val('');
+     	$('input[name=sradd]').val('');
+  
+     })
+    });//重置
+function create_code() {
+    function shuffle() {
+        var arr = ['1', 'r', 'Q', '4', 'S', '6', 'w', 'u', 'D', 'I', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+            'q', '2', 's', 't', '8', 'v', '7', 'x', 'y', 'z', 'A', 'B', 'C', '9', 'E', 'F', 'G', 'H', '0', 'J', 'K', 'L', 'M', 'N', 'O', 'P', '3', 'R',
+            '5', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        return arr.sort(function () {
+            return (Math.random() - .5);
+        });
+    };
+    shuffle();
+    function show_code() {
+        var ar1 = '';
+        var code = shuffle();
+        for (var i = 0; i < 4; i++) {
+            ar1 += code[i];
+        };
+        $(".add").text(ar1);
+         val1=$(".add").text(ar1).html().toLowerCase();
+  
+    };
+    show_code();
+    $(".add").click(function () {
+        show_code();
+    });
+}
+</script>
+<body style="background-color: #0088a8">
+<div class='div1'>
+
+<h1>登录界面</h1>
+
+<form method="post"   action=''>
+	<p>用户：<input type="text" name="username" class="auto" ><span class='error'>*用户名至少6位！</span><br/></p>
+	<p>密码：<input type="password" name="password" class="auto"></input><span class="error" >*密码长度至少8位！</span><br/></p>
+	<p>验证码：<input type="text" name='sradd' id="sradd0" class="auto">
+	<div class="add "></div><span class="error" id='error1' style="margin-left:80px ; ">*验证码有误！</span>
+   </p>
+    <p>&nbsp;&nbsp;&nbsp;<input type="submit" value="登录" ></input>
+    &nbsp;&nbsp;&nbsp;<input type="button" value="重置" name="butt2"></input></p>
+</form>
+</div>
+</body>
+</html>
