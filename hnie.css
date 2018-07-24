@@ -590,9 +590,8 @@ p .spanb{
 	margin: auto;
 	line-height: 30px;
 }
-.c_content h1{
+.c_content .c_top{
 	margin-top: 20px;
-	font-size: 36px;
 	padding: 0px 0px 30px;
 	color:#000;
 }
@@ -600,7 +599,6 @@ p .spanb{
 .c_container .c_main .c_right{
 	width: 340px;
 	height: 100px;
-	
 	float: right;
 }
  .c_right .c_rpanel{
@@ -692,7 +690,6 @@ p .spanb{
 	background-color: transparent;
 	border-collapse: collapse;
 	border-spacing: 0;
-
 }
 .l_leader tr{
 	padding: 2px;
@@ -974,4 +971,208 @@ table{
 	font-weight: normal;
 	text-align: justify;
 }
+/*honor*/
+.c_lpanel .h_con{
+	width: 920px;
+	height: auto;
+	
+	overflow: hidden;
+}
+.h_con ul{
+	height: auto;
+	width: 800px;
+	margin: auto;
+	
+}
+.h_con ul li{
+	float: left;
+	width: 250px;
+	height: 200px;
 
+	margin: 0px 5px 5px 5px;
+}
+.h_con ul li .img{
+	width: 200px;
+	height: 140px;
+	margin: auto;
+}
+.h_con ul li .zhushi{
+	font-size: 14px;
+	margin: auto;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+
+}
+/*setting*/
+.c_lpanel .s_body{
+	width: 920px;
+	height: auto;
+	margin: auto;
+	
+}
+.s_body table{
+	width: 800px;
+	margin: auto;
+    margin-bottom: 20px;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 16px;
+}
+.s_body table thead th{
+	vertical-align: bottom;
+	border: 1px solid #ddd;
+    padding: 5px;
+	text-align: left;
+}
+.s_body table td{
+	padding: 8px;
+	line-height: 1.42857143;
+	border: 1px solid #ddd;
+}
+
+
+
+/*实验实训*/
+.c_lpanel .e_body{
+	width: 822px;
+	height:auto;
+	margin: auto;
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+
+}
+.e_body p{
+	width: 400px;
+	float: left;
+	height: 35px;
+	padding: 5px;
+	margin: 0px auto;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #ccc;
+}
+.e_body p a{
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	margin-left: 5px;
+}
+.c_left .E-a{
+	width: 920px;
+	
+	height: auto;
+	
+}
+.E-a .k_body{
+	width: 920px;
+	margin: auto;
+	height: auto;
+}
+.k_body ul{
+	width: 900px;
+	height: auto;
+	margin:10px auto;
+}
+.k_body ul li{
+	width: 300px;
+	float: left;
+	height: 230px;
+	
+}
+.k_body ul li img{
+	width: 232px;
+	height: 170px;
+	box-shadow: 0 0 10px #aaa;
+	margin: 5px 34px;
+}
+.k_body ul li p{
+	font-size: 14px;
+	color:#565656;
+	text-align: center;
+	clear: both;
+	height: 16px;
+	padding-top: 5px;
+	white-space: nowrap;
+	line-height: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.c_rp_head h4{
+	color:#fff;
+	font-size: 18px;
+	line-height: 35px;
+	height: 35px;
+	font-weight: bolder;
+	float: left;
+	padding-left: 5px;
+}
+.c_rp_body .c_rp_news{
+ 	height: auto;
+ 	margin: 0;
+ 
+ }
+ .c_rp_news li{
+ 	height: 30px;
+ 	border-bottom: 1px  dotted #ddd;
+ 	margin-top: 5px;
+ }
+ .c_rp_news li p{
+ 	height: 14px;
+ 	line-height: 14px;
+ 	font-size: 14px;
+   padding-left: 5px;
+   width:280px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden; 
+ }
+ .c_rp_news li p a{
+ 	font-size: 14px;
+ 	line-height: 14px;
+ 	top: -3px;
+ 	padding-left: 10px;
+ }
+ .c_rp_body .news_more{
+ 	width: 80px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	font-size: 12px;
+ 	margin: auto;
+ 	text-align: center;
+ }
+ .c_content .sysx_introduction{
+ 	width: 920px;
+ 	height: auto;
+ }
+ .sysx_introduction .I_p{
+ 	text-align: right;
+ 	border-bottom: 1px solid #aaa;
+ 	line-height: 15px;
+ }
+ .sysx_introduction .s_img1{
+ 	width: 250px;
+ 	height: 250px;
+ 	overflow: hidden;
+ 	float: left;
+ 	margin-left: 20px;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0 0 7px #ccc;
+ 	border-radius: 5px 5px;
+ }
+ .s_img1 img{
+ 	width: 300px;
+ 	height: 300px;
+ }
+ .sysx_introduction .I_nei{
+ 	width: 900px;
+ 	margin: auto;
+ 	background: yellow;
+ 	height: auto;
+ }
+ .I_nei p{
+ 	
+ }
+ 
