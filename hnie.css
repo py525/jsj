@@ -563,6 +563,7 @@ color:#4496d2;
 	background-color: #fff;
 	font-size: 14px;
 }
+
 p .spana{
 	border-left: 10px solid #004784;
 	padding-left: 8px;
@@ -572,6 +573,7 @@ p .spanb{
 	vertical-align: middle;
 	width: 20px;
 	height: 20px;
+	margin-top: -2px;
 	background: url(./images/icon_home.png)  no-repeat;
 }
 .c_left p a{
@@ -1169,10 +1171,289 @@ table{
  .sysx_introduction .I_nei{
  	width: 900px;
  	margin: auto;
- 	background: yellow;
  	height: auto;
+ 	font-size: 14px;
  }
  .I_nei p{
- 	
+ 	width: 800px;
+ 	margin: auto;
+ 	padding: 0 10px;
  }
- 
+ .I_nei p span{
+ 	font-weight: bold;
+ 	padding: 0;
+ }
+.I_nei .I_img{
+	width: 900px;
+	height: auto;
+	padding: 0;
+ }
+.I_img ul{
+	width: 800px;
+	height: auto;
+	margin: auto;
+}
+.I_img ul li{
+	width: 256px;
+	height: 250px;
+	float: left;
+	padding: 10px 5px;
+}
+.I_img img{
+	width: 256px;
+	height: 250px;
+}
+
+/*教务教学*/
+.c_content .jw_n{
+	width: 1260px;
+	height: auto;
+	overflow: hidden;
+}
+.jw_n .jw_nei{
+	width: 1260px;
+	height: auto;
+}
+.jw_nei ul{
+	width: 1200px;
+	margin: auto;
+	height: auto;
+}
+.jw_nei ul li{
+	width: 350px;
+	float: left;
+	border-top: 5px solid #f3f3f3;
+	line-height: 25px;
+	overflow: hidden;
+	padding-top: 20px;
+	display: inline;
+	margin-right: 37px;
+    padding-bottom: 60px;
+}   
+.jw_nei p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+.jw_nei p span{
+	padding: 0;
+	margin: 0;
+	color:#888;
+}
+.jw_nei p a{
+	padding: 0;
+	margin: 0;
+	color: #4496d2;
+}
+.c_content .jw_nei_c{
+	width: 1260px;
+	height: auto;
+}
+.jw_nei_c ul{
+	width: 300px;
+	height: 20px;
+	margin-left: 960px;
+	margin-top: 30px;
+}
+.jw_nei_c ul li{
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	margin: 0 2px;
+	background: #4496d2;
+	width: 30px;
+	height: 20px;
+	border-radius: 5px 5px;
+	border: 1px solid blue;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.jw_nei_c ul li a{
+color:white;
+margin: auto;
+font-size: 14px;
+line-height: 20px;
+}
+
+
+/*jw*/
+.c_content .jw_top{
+	width: 815px;
+	height: 35px;
+	margin: auto;
+}
+.jw_top p{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+	padding-top: 0;
+}
+.c_content .jw_cont{
+	width: 900px;
+	height: auto;
+	padding-top: 10px;
+}
+.jw_cont p{
+	line-height: 30px;
+	padding: 5px 0 0 0;
+	font-size: 14px;
+	text-indent:2em; 
+}
+.jw_cont .jw_img{
+	width: 900px;
+	height: auto;
+	padding-top: 20px;
+}
+.jw_img img{
+	width: 800px;
+	height: 600px;
+	margin-left: 50px;
+	padding: 0;
+}
+.jw_img p{
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+
+
+/*科学教研*/
+.c_p  .c_ka{
+	margin-left:500px; 
+}
+.c_p .c_kd{
+	font-size: 18px;
+	height:20px;
+	line-height: 20px;
+	padding: 5px; 
+}
+.c_kh{
+	border-top: 5px solid #33588f;
+}
+.c_content .r_content{
+	height: auto;
+	width: 1260px;
+	margin:10px auto;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.r_content p{
+	text-indent: 2em;
+	padding: 0 15px;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+.r_content p span{
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+.r_content .r_tab{
+	width: 1200px;
+	margin: 20px auto;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 16px;
+	border: 1px solid #ddd;
+}
+.r_tab thead{
+	display: table-header-group;
+	vertical-align: middle;
+	border-color:inherit;
+}
+.r_tab thead th{
+	vertical-align: bottom;
+	border-left: 1px solid #ddd;
+	text-align: center;
+	padding: 8px;
+}
+.r_tab td{
+	padding: 8px;
+	line-height: 1.42857143;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	text-align: center;
+}
+.r_tab  .r_tab_f{
+	padding: 10px;
+	margin: 0px 10px;
+}
+
+.r_tab_f span{
+	width: 20px;
+	margin: auto;
+    display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+.r_content .tab_top{
+	padding: 10px 0 0 0;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+.E-a .s_body{
+	width: 920px;
+	height: auto;
+	overflow: hidden;
+}
+.s_body  ul{
+	width: 900px;
+	margin: auto;
+	height: auto;
+}
+.s_body ul li{
+	width: 280px;
+	float: left;
+	border-top: 5px solid #f3f3f3;
+	line-height: 25px;
+	overflow: hidden;
+	padding-top: 20px;
+	display: inline;
+	margin-right: 30px;
+    padding-bottom: 50px;
+}   
+.s_body p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+.s_body p span{
+	padding: 0;
+	margin: 0;
+	color:#888;
+}
+.s_body p a{
+	padding: 0;
+	margin: 0;
+	color: #4496d2;
+}
+.s_body .s_p{
+white-space:nowrap;
+ text-overflow:ellipsis;
+  overflow:hidden;
+}
+.E-a .sw_tz{
+	width: 920px;
+	height: auto;
+	margin: auto;
+}
+.sw_tz p{
+	text-align: right;
+	margin-right: 20px;
+}
+.sw_tz p a{
+    font-size: 14px;
+    line-height: 14px;
+	border: 1px solid #ccc;
+	background: #4496d2;
+	padding:5px 10px;
+	border-radius: 9px;
+	color:#fff;
+}
