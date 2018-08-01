@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src='./jquery-3.3.1.min.js'></script>
+  <style type="text/css">
+  *{
+    padding: 0;
+    margin: 0;
+  }
+   #ul1{
+    width: 1050px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+   }
+   #ul1 li{
+    width: 130px;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    z-index: 12;
+    list-style: none;
+   }
+   #ul1 .cli ol{
+    width: 130px;
+    height: auto;
+    font-size: 14px;
+    
+   }
+   ol li{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 130px;
+    text-align: center;
+  left: 0px;
+  transform: rotateY(180deg);
+  transition: all 1s;
+   }
+   #ul1 .cli:hover ol li{
+   transform: none;
+   opacity: 1;
+    filter: alpha(opacity=1);
+   }
+   
+  </style>
+  <script type="text/javascript">
+  $(function(){
+    $('#ul1').find('.cli').hover(function(){
+     len=($(this).find('ol li').length);
+     var i;
+     for(i=0;i<len;i++)
+     {
+      $(this).find('li').eq(i).css({'transition-delay':i*200+'ms'});
+     }
+   },function(){
+     len=($(this).find('ol li').length);
+     var i;
+     for(i=0;i<len;i++)
+     {
+      $(this).find('li').eq(i).css({'transition-delay':(len-i)*200+'ms'});
+     }
+    });
+    });
+  </script>
+</head>
+<body>
+<div class="wrap">
+         <ul id='ul1'>
+           <li class="cli"><a class="active" href='home.html'>网站首页</a></li>
+           <li class="cli" style="background: pink;"><a href='./jianjie.html'>关于我们</a>
+                     <ol>
+                      <li><a href='./jianjie.html'>学院简介</a></li>
+                       <li><a href='./leader.html'>学院领导</a></li>
+                       <li><a href='./team.html'>师资队伍</a></li>
+                        <li><a href='./honor.html'>学院荣誉</a></li>
+                        <li><a href='./setting.html'>机构设置</a></li>
+                      </ol></li>
+          <li class="cli"><a href='./Experimental.html?0'>实验实训</a>
+                       <ol >
+                           <li><a href='Experimental.html?1'>科研设施</a></li>
+                            <li><a href='Experimental.html?2'>实验室</a></li>
+                             <li><a href='Experimental.html?3'>实习基地</a></li>
+                               <li><a href='Experimental.html?4'>学生实训室</a></li>
+                             <li style="background: yellow;"><a href='Experimental.html?5'>科研|实验|实训活动</a></li>
+                            </ol></li>
+                        <li class="cli"> <a href='./jiaowu.html'>教务教学</a></li>
+                        <li class="cli"><a href='./research.html'>科学研究</a></li>
+                           <li class="cli"><a href='./studentwork.html?0'>学生工作</a>
+                            <ol>
+                            <li><a href='./studentwork.html?1'>学工概况</a></li>
+                            <li><a href='./studentwork.html?2'>资助贷勤</a></li>
+                                <li><a href='./studentwork.html?3'>学习社团</a></li>
+                             <li><a href='./studentwork.html?4'>就业指导</a></li>
+                            <li><a href='./studentwork./studentwork.html?5'>科技创新</a></li>
+                           <li><a href='./studentwork.html?6'>团学活动</a></li>
+                           </ol></li>
+                    <li class="cli"><a href='pingjian.html?0'>评建工作</a>
+                              <ol>
+<li><a href='pingjian.html?1'>评建工作</a></li>
+<li><a href='pingjian.html?2'>新闻动态</a></li>
+<li><a href='pingjian.html?3'>通知公告</a></li>
+</ol></li>
+<li class="cli"><a href='http://wpa.qq.com/msgrd?v=3&uin=1234567&site=qq&menu=yes'>在线咨询</a></li></ul>
+</div>
+
+</body>
+</html>

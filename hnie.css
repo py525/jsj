@@ -190,6 +190,7 @@ header .header1 .logo{
 	text-align: center;
 	z-index: 12;
 	
+	
 }
  .wrap ul li a{
 	display: block;
@@ -593,8 +594,8 @@ p .spanb{
 	line-height: 30px;
 }
 .c_content .c_top{
-	margin-top: 20px;
-	padding: 0px 0px 30px;
+	margin-top: 10px;
+	padding: 0px 0px 20px;
 	color:#000;
 }
 
@@ -796,7 +797,7 @@ td .l_name a{
 	.c_content .t_body{
 	width: 920px;
 	height: auto;
-	margin-top: 30px;
+	margin-top: 10px;
 } 
 .t_table{
 	width: 920px;
@@ -810,7 +811,7 @@ td .l_name a{
 .t_table thead th{
 	vertical-align: bottom;
 	border-bottom: 2px solid #ddd;
-	background-color: #d9edf7;
+	background-color: rgba(40,138,233,0.56);
 	text-align: left;
 	padding: 8px;
 }
@@ -973,11 +974,12 @@ table{
 	font-weight: normal;
 	text-align: justify;
 }
+
+
 /*honor*/
 .c_lpanel .h_con{
 	width: 920px;
 	height: auto;
-	
 	overflow: hidden;
 }
 .h_con ul{
@@ -1063,9 +1065,7 @@ table{
 }
 .c_left .E-a{
 	width: 920px;
-	
 	height: auto;
-	
 }
 .E-a .k_body{
 	width: 920px;
@@ -1298,7 +1298,7 @@ line-height: 20px;
 .jw_cont p{
 	line-height: 30px;
 	padding: 5px 0 0 0;
-	font-size: 14px;
+	font-size: 16px;
 	text-indent:2em; 
 }
 .jw_cont .jw_img{
@@ -1321,6 +1321,13 @@ line-height: 20px;
 
 
 /*科学教研*/
+.c_p{
+	width: 920px;
+	margin: auto;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .c_p  .c_ka{
 	margin-left:500px; 
 }
@@ -1351,6 +1358,7 @@ line-height: 20px;
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
+	font-size: 14px;
 }
 .r_content .r_tab{
 	width: 1200px;
@@ -1358,7 +1366,7 @@ line-height: 20px;
 	background-color: transparent;
 	border-collapse: collapse;
 	border-spacing: 0;
-	font-size: 16px;
+	font-size: 14px;
 	border: 1px solid #ddd;
 }
 .r_tab thead{
@@ -1457,3 +1465,47 @@ white-space:nowrap;
 	border-radius: 9px;
 	color:#fff;
 }
+
+
+/*评建专栏*/
+.c_lpanel .pj_body{
+	width: 920px;
+	height: auto;
+	margin: auto;	
+}
+.pj_body .pj_table{
+	width: 900px;
+	height: auto;;
+	margin: auto;
+}
+.pj_body .pj_table td{
+	padding: 0px 5px 0;
+	margin: 0;
+}
+.pj_body .pj_table tr{
+	margin: 0;
+	padding: 0;
+}
+.pj_body .tz_2{
+	width: 500px;
+	margin: 50px auto;
+}
+.E-a .pjgz_tz{
+	width: 920px;
+	height: auto;
+	margin: auto;
+}
+.pjgz_tz p{
+	text-align: right;
+	margin-right: 20px;
+}
+.pjgz_tz p a{
+    font-size: 14px;
+    line-height: 14px;
+	border: 1px solid #ccc;
+	background: #4496d2;
+	padding:5px 10px;
+	border-radius: 9px;
+	color:#fff;
+}
+
