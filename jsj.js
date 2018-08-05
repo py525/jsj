@@ -130,7 +130,7 @@ GetRequest();
  
   /*导航栏*/   
   $('#ul1 li').hover(function(){
-    $(this).children(0).css({'background-color':'#5876a2'});
+    $(this).children(0).css({'background-color':'rgba(43,152,229,0.26)'});
     $('#ul1 li').not($(this)).css({'background-color':''});
     $(this).find('ol').stop(true,false).slideDown('slow');
     $(this).find('ol').slideDown("slow");

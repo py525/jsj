@@ -106,7 +106,6 @@ header .header1{
 	background:url(./images/blue-bg.png);
 	width: 1260px;
 	height: 120px;
-	border-bottom: 2px solid #4d6d9d;
 	margin: 0 auto;	
 	background-size: 1260px 120px;	
 }
@@ -137,7 +136,7 @@ header .header1 .logo{
 	background-size: 30px 30px;
 	width: 30px;
 	height: 30px;
-	margin: -33px 300px;
+	margin: -31px 300px;
 	
 }
 .body{
@@ -156,13 +155,13 @@ header .header1 .logo{
 	height:45px;
 	width: 1260px;
 	background:url(./images/nav_bg26.png) bottom center no-repeat ;
-	background-size: 1260px 45px;
+	background-size: 1280px 45px;
 	margin: 0 ;		
 }
 .nav_bgj{
 	height:45px;
 	width: 1260px;
-	background:#33588f ;
+	background:rgba(35,124,219,0.3);
 	background-size: 1260px 50px;
 	margin: 0 ;		
 }
@@ -196,13 +195,13 @@ header .header1 .logo{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
-	color:#aaa;
+	color:black;
 	padding: 0px;	
 }
 
 .wrap ul li ol{
 	display: none;
-	background-color: #5876a2;
+	background-color: rgba(191,228,254,0.2);
 	width: 130px;
 	height: auto;
 	position: absolute;	
@@ -222,12 +221,13 @@ header .header1 .logo{
 	line-height: 45px;
 	left: 200px;
     margin-bottom: 5px;
+    color:#56607e;
 }
-li:hover ol li a{
+/*li:hover ol li a{
 	background-color: #002e73;
-}
+}*/
 a.active{
-	background-color:#5876a2; 
+	background-color:rgba(43, 152, 229, 0.26); 
 }/*导航*/
 
  .bodybo{
@@ -566,7 +566,7 @@ color:#4496d2;
 }
 
 p .spana{
-	border-left: 10px solid #004784;
+	border-left: 10px solid #2481dd;
 	padding-left: 8px;
 }
 p .spanb{
@@ -1151,7 +1151,6 @@ table{
  }
  .sysx_introduction .I_p{
  	text-align: right;
- 	border-bottom: 1px solid #aaa;
  	line-height: 15px;
  }
  .sysx_introduction .s_img1{
@@ -1227,7 +1226,7 @@ table{
 	overflow: hidden;
 	padding-top: 20px;
 	display: inline;
-	margin-right: 37px;
+	margin:0 18.5px;
     padding-bottom: 60px;
 }   
 .jw_nei p{
@@ -1338,7 +1337,7 @@ line-height: 20px;
 	padding: 5px; 
 }
 .c_kh{
-	border-top: 5px solid #33588f;
+	border-top: 5px solid #2481dd;
 }
 .c_content .r_content{
 	height: auto;
@@ -1421,6 +1420,7 @@ line-height: 20px;
 	float: left;
 	border-top: 5px solid #f3f3f3;
 	line-height: 25px;
+	height: 210px;
 	overflow: hidden;
 	padding-top: 20px;
 	display: inline;
