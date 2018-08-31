@@ -2,50 +2,33 @@ $(function () {
     $('.E-a').hide();
    function GetRequest() {
    var url = location.search; //获取url中"?"符后的字串
-   if (url.indexOf("?") != -1) {    //判断是否有参数
-   var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
-   strs = str.split("=");   //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）     
-   $('.E-a').eq(strs[0]).show();
-   var title=['实验实训','科研设施','实验室','实习基地','学生实训室','科研|实验|实训活动'];
-   var title1=['学生工作','学工概况','资助贷款','学习社团','就业指导','科技创新','团学活动'];
-   var title2=['评建专栏','评建工作','新闻动态','通知公告'];
-   $("#changing").text(title[strs[0]]);
-   $("#changing1").text(title1[strs[0]]);
-   $("#changing2").text(title2[strs[0]]);
- if(strs==0)
- {
-  page();
- }
- if(strs==1){
-  $('.s_body .pj_tz1').eq(0).show().siblings().hide();
-    $('.E-a .pjgz_tz').find('a').click(function(){
-       var swidx = $(this).index();
-       $('.s_body .pj_tz1').eq(swidx).show().siblings().hide();
-    })
- }
- if(strs==2){
-  $('.s_body .pj_tz2').eq(0).show().siblings().hide();
-    $('.E-a .pjgz_tz').find('a').click(function(){
-       var swidx = $(this).index();
-       $('.s_body .pj_tz2').eq(swidx).show().siblings().hide();
-    })
- }
- if(strs==3){
-  $('.s_body .pj_tz3').eq(0).show().siblings().hide();
-    $('.E-a .pjgz_tz').find('a').click(function(){
-       var swidx = $(this).index();
-       $('.s_body .pj_tz3').eq(swidx).show().siblings().hide();
-    })
- }
-   if(strs==6)
+   if (url.indexOf("?") != -1)
+   {    //判断是否有参数
+    var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+     strs=str.substr(0,1);
+     
+    $('.E-a').eq(strs[0]).show();
+    var title=['实验实训','科研设施','实验室','实习基地','学生实训室','科研|实验|实训活动'];
+    $("#changing").text(title[strs[0]]);
+   
+    if(strs==0)
+    {
+      page(9);
+    }
+    
+   /*if(strs==6)
    {
     $('.s_body .s_tz').eq(0).show().siblings().hide();
     $('.E-a .sw_tz').find('a').click(function(){
        var swidx = $(this).index();
        $('.s_body .s_tz').eq(swidx).show().siblings().hide();
     })
-   }
-}
+   }*/
+ }
+ else{
+    $('.E-a').eq(0).show();
+    page(9);
+  }
 }
 GetRequest();
 // 实验实训主导航  学生工作
@@ -194,20 +177,20 @@ $('.jw_nei_c ul li').click(function(){
 });
 
 //教务教学字体切换
-$('.size').find('a').click(function(){
-    var size=$(this).index();
-    if(size==0)
-    {
-      $('.jw_cont p').css({'font-size':'18px'});
-    }
-    else if(size==1)
-    {
-      $('.jw_cont p').css({'font-size':'16px'});
-    }
-    else{
-      $('.jw_cont p').css({'font-size':'13px'});
-    }
-});
+$('body').off('click').on('click','.size a',function(){	
+	 var size=$(this).index(); 
+	    if(size==0)
+	    {
+	      $('.pjpre').css({'font-size':'18px'});
+	    }
+	    else if(size==1)
+	    {
+	      $('.pjpre').css({'font-size':'16px'});
+	    }
+	    else{
+	      $('.pjpre').css({'font-size':'13px'});
+	    }
+})
 
 //科学教研
 $('.r_content').eq(0).show().siblings().hide();
@@ -222,8 +205,8 @@ $('.c_p').find('.c_kd').mouseenter(function(){
 
 
   $('.pj_body .pj_table').find('tr:even').css({'background-color':'rgba(221,221,221,0.18)'}) 
-function page(){
- var pageSize = 4;    //每页显示的记录条数
+function page(tiao){
+ var pageSize = tiao;    //每页显示的记录条数
              var curPage=0;        //当前页
              var lastPage;        //最后页
              var direct=0;        //方向
@@ -238,7 +221,7 @@ function page(){
                 curPage=1;    // 设置当前为第一页
                 displayPage(1);//显示第一页
 
-                document.getElementById("btn0").innerHTML="共9条 " + curPage + "/" + page + " 页";   // 显示当前多少页
+                document.getElementById("btn0").innerHTML="共"+(len-1)+"条 " + curPage + "/" + page + " 页";   // 显示当前多少页
            $("#first").click(function firstPage(){    // 首页
                     curPage=1;
                     direct = 0;
@@ -289,7 +272,7 @@ function page(){
                 } else {
                     curPage = 1;
                 }    
-                document.getElementById("btn0").innerHTML="共9条 " + curPage + "/" + page + " 页";        // 显示当前多少页
+                document.getElementById("btn0").innerHTML="共"+(len-1)+"条 " + curPage + "/" + page + " 页";        // 显示当前多少页
                 begin=(curPage-1)*pageSize + 1;// 起始记录号
                 end = begin + 1*pageSize - 1;    // 末尾记录号     
                 if(end > len ) end=len;
@@ -307,7 +290,7 @@ function page(){
 
 
 
-function fun_ssgn(){
+/*function fun_ssgn(){
         var ssnr=$("#ssnr").val();
         var ssfs="web";
         if($("#ssfs_people").attr("checked")){
@@ -323,6 +306,6 @@ function fun_ssgn(){
         if(e && e.keyCode==13){ // enter 键
             fun_ssnr();
         }
-    }
+    }*/
 
         });

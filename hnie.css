@@ -587,8 +587,8 @@ p .spanb{
 	padding-bottom: 10px;
 }
 .c_lpanel .c_content{
-	padding: 10px;
-	width: 920px;
+	padding: 5px;
+	width: 910px;
 	font-size: 14px;
 	margin: auto;
 	line-height: 30px;
@@ -760,7 +760,7 @@ td .l_name a{
 	}
 	.ld_body .ld_h{
       margin: auto;
-      font-size: 28x;
+      font-size: 28px;
       height: 30px;
       line-height: 30px;
       width: 200px;
@@ -832,7 +832,7 @@ table{
 }
 .tiao,.tiao td,.tiao div{
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	color:#000000;
 	margin-left: auto;
 	margin-right: auto;
@@ -840,7 +840,7 @@ table{
 }
 .tiao a:link{
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	color:#000000;
 	text-decoration: none;
 	line-height: 14px;
@@ -849,7 +849,7 @@ table{
 	display: inline-block;
 	height: 14px;
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	border: 1px solid #afd5f5;
 	background: #fff;
 	padding: 2px 4px;
@@ -857,21 +857,21 @@ table{
 }
 .tiao .t_prev,.tiao #first{
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	margin-right: 3px;
 	padding: 2px 4px;
 	line-height: 14px;
 }
 .tiao .t_next,.tiao .last{
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	margin-left: 2px;
 	padding: 2px 4px;
 	line-height: 14px;
 }
 #gotopagebut{
 	font-size: 12px;
-	font-family: 宋体;
+	font-family: '宋体';
 	height: 20px;
 	color:#000000;
 	
@@ -936,12 +936,11 @@ table{
 	background: #fff;
 }
 .te_js2 .te_js2_1top{
-
 	font-size: 18px;
 	color:#b34c19;
 	line-height: 22px;
-	margin: 0px auto
-	padding:0 0 10x 50px;
+	margin: 0px auto;
+	padding:0 0 10px 50px;
 	font-weight: normal;
 	border-bottom: #efefef 1px solid;
 }
@@ -958,10 +957,13 @@ table{
 	height:auto;
 	margin-top: 20px;
 	font-size: 18px;
+	padding:0 0 0 50px;
+	
 }
 .te_js2_1body table{
 	width: 800px;
 	height: auto;	
+	
 }
 .te_js2_1body table thead th{
 	vertical-align: bottom;
@@ -969,10 +971,11 @@ table{
 }
 .te_js2_1body p{
 	font-size: 14px;
-	padding-top: 30px;
 	line-height: 22px;
 	font-weight: normal;
 	text-align: justify;
+	padding:30px 10px ;
+	margin-left:-50px;
 }
 
 
@@ -1203,7 +1206,7 @@ table{
 	height: 250px;
 }
 
-/*教务教学*/
+/*閺佹瑥濮熼弫娆忣劅*/
 .c_content .jw_n{
 	width: 1260px;
 	height: auto;
@@ -1278,44 +1281,63 @@ line-height: 20px;
 
 /*jw*/
 .c_content .jw_top{
-	width: 815px;
+	width: auto;
 	height: 35px;
 	margin: auto;
+	text-align:center;
 }
 .jw_top p{
+	height:35px;
+	padding:0 50px;
+	margin:0 auto;
+	width:814px;
+	}
+.jw_top p span{
 	float: left;
 	height: 35px;
 	line-height: 35px;
 	margin: 0;
-	padding-top: 0;
+	padding:0 20px;
+	text-align:center;
+}
+.pjpre{
+padding: 5px 20px;
+	font-size: 16px;
+	font-family:'微软雅黑';
+	width:880px;
+	margin:0px auto;
+	white-space:pre-wrap;
+	white-space:-moz-pre-wrap;
+	white-space:-pre-wrap;
+	white-space:-o-pre-wrap;
+	word-wrap:break-word;
+    
 }
 .c_content .jw_cont{
 	width: 900px;
 	height: auto;
 	padding-top: 10px;
+	font-size: 16px;
 }
-.jw_cont p{
+.jw_cont .jw_neir{
 	line-height: 30px;
 	padding: 5px 0 0 0;
 	font-size: 16px;
 	text-indent:2em; 
+	height:auto;
 }
 .jw_cont .jw_img{
-	width: 900px;
+	width:600px;
+	position: relative;
+    left: 150px;
 	height: auto;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .jw_img img{
-	width: 800px;
-	height: 600px;
-	margin-left: 50px;
-	padding: 0;
+	width: 600px;
+	height: 300px;
 }
-.jw_img p{
-	text-align: center;
-	font-size: 14px;
-	line-height: 30px;
-}
+
 
 
 
@@ -1424,7 +1446,7 @@ line-height: 20px;
 	overflow: hidden;
 	padding-top: 20px;
 	display: inline;
-	margin-right: 30px;
+	margin-right:20px;
     padding-bottom: 50px;
 }   
 .s_body p{
